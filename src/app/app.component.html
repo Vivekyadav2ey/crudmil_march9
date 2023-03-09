@@ -1,0 +1,30 @@
+<h1>      Welcome To Employee Managment systm</h1>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>Country</th>
+        <th>Address</th>
+        <th>Phoneno</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let record of employeelist">
+        <td>{{record.id}}</td>
+        <td>{{record.name}}</td>
+        <td>{{record.Country}}</td>
+        <td>{{record.Address}}</td>
+        <td>{{record.Phoneno}}</td>
+        <td>
+          <button type="button" class="btn btn-link" (click)="editEmployee(record)">Edit</button>
+          <button type="button" class="btn btn-success" (click)="deleteTodo(record.id)">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-success" (click)="createEmployee()">Create</button>
+</div>
+

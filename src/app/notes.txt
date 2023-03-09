@@ -1,0 +1,11 @@
+1 Install Angular CLI
+2 Create New Angular Project
+3 Create New Angular Service
+4 Import HttpClientModule in App Module
+5 Setup Mock JSON Server
+5.1 Step 1 Install json-server
+5.2 Step 2 Create a json file
+5.3 Step 3 Start mock server
+6 CRUD Method in Service Class
+7 Consum Service and CRUD Methods in Component
+
